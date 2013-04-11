@@ -12,6 +12,7 @@ use Encode::JP::Mobile;
 
 my $moxy = Moxy->new(+{
     # configuration here
+    global => {plugins => [qw/OpenSocial ShowHTMLSource/]},
 });
 print "assets path is: @{[ $moxy->assets_path ]}\n";
 
